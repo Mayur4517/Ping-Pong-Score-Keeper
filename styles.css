@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2E3A46, #4A646F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px 50px;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    transition: box-shadow 0.3s ease;
+}
+
+.main-container:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1E90FF;
+    text-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+}
+
+.score {
+    font-size: 3.5rem;
+}
+
+.to-text {
+    font-size: 1.8rem;
+    color: #555;
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.pingpong-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pingpong-image:hover {
+    transform: scale(1.05);
+}
+
+.settings {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    background-color: #E3E9ED;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #0498ee, #e32727);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #4682B4, #1E90FF);
+}
+
+.reset {
+    background: linear-gradient(135deg, #DC143C, #B22222);
+}
+
+.reset:hover {
+    background: linear-gradient(135deg, #B22222, #DC143C);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .main-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .score {
+        font-size: 3rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 10px 20px;
+    }
+
+    .dropdown {
+        font-size: 1rem;
+        padding: 6px;
+    }
+}
